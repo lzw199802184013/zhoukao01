@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#d43c3c"
+        >
+       <com.facebook.drawee.view.SimpleDraweeView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:background="@mipmap/ic_launcher_round"
+            android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="历史纪录"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview3"
+        ></android.support.v7.widget.RecyclerView>
+</LinearLayout>
